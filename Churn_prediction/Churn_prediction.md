@@ -3,7 +3,7 @@
 
 # MBDM Modulo 5: Churn Prediction
 
-#### 138070
+#### ajimenez-MBD
 
 ## Introduccion
 
