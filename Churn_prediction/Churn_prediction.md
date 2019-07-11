@@ -7,7 +7,7 @@
 
 ## Introduccion
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/linea.png?authuser=1&supportedpurview=project">
+![png](linea.png)
 
 El problema del churn es un problema que afecta a todas las compañías, pero en especial a las Telcos, con una tasa superior al 30% debido a la alta competencia entre ellas y la gran facilidad de cambiar de una a otra
 compañía.
@@ -20,7 +20,7 @@ de los clientes.
 
 ## Descripcion del DataSet 
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/linea.png?authuser=1&supportedpurview=project">
+![png](linea.png)
 
 Esta descripción del data set es dada por el enunciado, posteriormente analizaremos paso a paso los datos del enunciado.
 
@@ -51,7 +51,7 @@ La Columna **“Churn”** es nuestro target.
 
 ## Exploracion del DataSet
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/linea.png?authuser=1&supportedpurview=project">
+![png](linea.png)
 
 Cargamos el dataset y librerias para su posterior manipulación:
 
@@ -181,7 +181,7 @@ churn['Churn'].value_counts(sort=True,normalize = True)
 
 ## Definición de Variables
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/linea.png?authuser=1&supportedpurview=project">
+![png](linea.png)
 
 Tras un pequeño analisis, coincidimos con el enunciado del dataset. El siguiente paso es diferenciar nuestras varibales numericas de las categoricas, y realizar los cambios de tipologia necesarios:
 
@@ -197,7 +197,7 @@ col_categoricas = ['gender', 'SeniorCitizen', 'Partner', 'Dependents','PhoneServ
 
 ## Exploración de Variables Numéricas
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/linea.png?authuser=1&supportedpurview=project">
+![png](linea.png)
 
 Tras intentar realizar la siguiente operación:
 `churn[var_numericas] = churn[var_numericas].astype(float)`
@@ -1705,7 +1705,7 @@ Que tienen como variables `'Yes', 'No', 'No internet services'`, las cuales pode
 
 ## Exploración de Variables Categóricas
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/linea.png?authuser=1&supportedpurview=project">
+![png](linea.png)
 
 Procederemos a la exploración de las variables categoricas, tomando como primera acción el cambio mencionado anteriormente y convirtiendo las varibales a numéricas:
 
@@ -1924,7 +1924,7 @@ if (outputEl) {{
 
 ## Feature Ingeniering
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/linea.png?authuser=1&supportedpurview=project">
+![png](linea.png)
 
 En este apartado generaremos nuevas dimensiones de las variables continuas:
 
@@ -2517,7 +2517,7 @@ churn_B.info()
 
 ## Nomalizacion, distribución y correlacion de las variables.
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/linea.png?authuser=1&supportedpurview=project">
+![png](linea.png)
 
 Uno de los fallos mas habituales es dar a la maquina datos no escalados. Esto entorpeceria el aprendizaje de la maquina debido al peso de las varibales de alto valor, dejando aun lado la importancia casi de las variables categóricas. Por ello es necesario realziar un escalado a corde al dataset. Otro punto importantes es ver las correlaciones de las variables para ver si estamos dando la misma información.
 
@@ -2829,7 +2829,7 @@ Podemos observar como en la matriz de correlaciones aparece nuestro feature engi
 
 ## Train and Test
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/linea.png?authuser=1&supportedpurview=project">
+![png](linea.png)
 
 Antes de empezar a lanzar los modelos debemos separar nuestros datos de entrenamiento y testing.
 
@@ -2927,7 +2927,7 @@ def churn_prediction(algoritmo, training_x, testing_x, training_y, testing_y):
 
 ## Modelos
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/linea.png?authuser=1&supportedpurview=project">
+![png](linea.png)
 
 Para este apartado se a decidido utilizar los modelos mas utilizados hoy en dia, los cuales son:
 * LogisticRegression
@@ -3507,7 +3507,7 @@ if (outputEl) {{
 
 ## Conclusion
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/linea.png?authuser=1&supportedpurview=project">
+![png](linea.png)
 
 Tras visualizar los graficos de los modelos, llegamos a la conclusion que el mejor algoritmo para este caso es la **LogisticRegression**, para la matriz B, dandonos los siguientes resultados:
 
