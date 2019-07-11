@@ -1,5 +1,5 @@
 
-<img src="https://storage.cloud.google.com/mbdm-icemd/icemd.png?authuser=1&supportedpurview=project">
+![png](icemd.png)
 
 # MBDM Modulo 5: Churn Prediction
 
